@@ -1,0 +1,324 @@
+body{
+  
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/*.logo4{
+
+    width: 100%;
+}*/
+
+header {
+    background-color: #bbbbbb;
+    padding: 20px 0; /* espaciamiento en emcabezado*/
+    
+}
+
+.main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.caja{ /*  para centralizar la pantalla en automatico del usuario*/
+    width: 940px;
+    position: relative;
+    margin: 0  auto;
+
+}
+
+nav{ /* posicion del texto en la pagina*/
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav a:hover{ /* captura el movimiento del mouse del usuario*/
+    color: #c78c19;
+    text-decoration: underline; /* coloca el subrayado de los titulos*/
+}
+
+nav li { /* que ocupe el 100% de la pagina*/
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase; /* colocar en mayusculas*/
+    color: #000000;
+    font-weight: bold; /* Negrito*/
+    font-size: 22px; /* tamaño del texto*/
+    text-decoration: none; /* quitar el subrayado*/
+}
+
+nav a:hover{
+    font-size: 23px;  /*agranda al momento de pasar el mouse*/
+}
+
+
+.productos{
+    width: 940px;
+    margin: 0  auto;
+    padding: 50px; 
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center; /* alinear el texto al centro*/
+    width: 30%; /*espacio */
+    vertical-align: top;
+    -background: #cccccc;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+
+
+    /* es lo mismo que el de abajo pero resumido*/
+    border: 2px solid #000000;
+
+    /*border-color: #000000;
+    border-width: 2px;
+    border-style: solid; */
+
+
+
+    /*bordes*/
+   /* border-top-left-radius: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 50px;*/
+
+    /* es lo mismo que el de arriba pero mas resumido*/
+    /* (border-radius: 10px 25px 40px 50px;)*/
+    /* y si vas a colocar el mismo valos en todos los diametros o lados, colocamos un solo valor como se muestra abajoj*/
+    border-radius: 20px;  
+}
+
+.productos li:hover{ /* captura el movimiento del mouse del usuario*/
+    border-color: #c78c19;
+    font-size: 33px; /*agranda al momento de pasar el mouse*/
+}
+
+
+.productos li:active{ /* captura el clip del mouse*/
+    border-color: #088c19;
+}
+
+.productos li:hover h2{ /*agranda los titulos de h2 al momento de pasar el mouse*/
+    font-size: 33px;
+}
+
+.productos h2{
+    font-size: 30px; /* tamaño de la letra*/
+    font-weight: bold; /*negrita*/
+
+
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{ /*pie de paginas*/
+    text-align: center;
+    background: url(imagenes/bg.jpg); /*utilizando (url(imagenes/bg.jpg);) utiliza una imagen dentro del background*/
+    padding: 40px; /* espaciemiento entrega la imagen*/
+}
+
+.Copyright{
+    color: #cccccc;
+    font-size: 13px;
+}
+
+
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block; 
+    font-size: 20px;
+    margin: 10px 0 10px; 
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{ /* cambio para el boton "enviar formulario"*/
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 19px;
+    transition: 1s all; /* los segundos de cambio de color al boton, de la mano con la calse de ".enviar:hover!*/
+    cursor: pointer; /* cambia el puntero del mouse por una manito*/
+}
+
+.enviar:hover{
+    background: red;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;/* espaciamiento interno*/
+}
+
+
+/*Aqui inicia el CSS para nuestra home*/
+
+.banner{
+    width: 100%;
+}
+
+
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear:left;
+    /*text-shadow: 2px 2px red;*/
+    /*color: rgba(0,0,0,0.3)*/
+}
+
+/*.titulo-principal:first-letter{
+    font-weight: bold;
+
+}
+
+p:first-line{
+    font-style: italic;
+}*/
+
+
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float:left;
+    margin: 0 20px 20px 0; 
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+    /*background: radial-gradient(orange 50%,blue, red, black);*/
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+    
+}
+
+.contenido-diferenciales{
+   width: 640px;
+   margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;
+}
+
+.items:before{
+    content:"★" ;
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000; /*sobreado */
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen and (max-width: 480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+
+}
